@@ -10,12 +10,12 @@ public class CalculateService {
                 count++; // увеличиваем счётчик месяцев отдыха
                 money = money - expenses;
                 money = money / 3;
-            }else {
+            } else {
                 money = money - expenses;
                 money = money + income;
             }
 
-            }
+        }
 
         return count;
     }

@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 public class CalculateServiceTest {
     @ParameterizedTest
 
-    @CsvFileSource(files="src/test/resources/data.csv")
+    @CsvFileSource(files = "src/test/resources/data.csv")
     public void testCalculateService(int expected, int income, int expenses, int threshold) {
         CalculateService service = new CalculateService();
         int actual = service.calculate(income, expenses, threshold);
